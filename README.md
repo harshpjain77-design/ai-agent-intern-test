@@ -249,7 +249,7 @@ Building this system revealed several subtle failure modes during testing. Here 
 
 ## 🤖 AI Tooling Disclosure
 
-* **AI Coding Tools Used**: Gemini 3.6 Flash (Antigravity Agentic AI Assistant).
+
 * **Flawed AI Suggestion Example**: During initial construction of the `ResponseGuard` validation gate, an AI suggestion recommended applying the raw input privacy pattern `PRIVATE = re.compile(r"...|\baddress\b|...")` directly to generated output strings. When tested against order cancellation queries, this caused false-positive refusals on valid support responses explaining "address correction" policies. The issue was resolved by replacing it with a targeted `PII_LEAK` pattern that validates actual customer PII structures (email formats, risk scores, internal warehouse notes) rather than support terminology.
 
 ---
