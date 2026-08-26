@@ -247,14 +247,12 @@ Building this system revealed several subtle failure modes during testing. Here 
 
 ---
 
-## 🤖 AI Tooling Disclosure
-
 
 * **Flawed AI Suggestion Example**: During initial construction of the `ResponseGuard` validation gate, an AI suggestion recommended applying the raw input privacy pattern `PRIVATE = re.compile(r"...|\baddress\b|...")` directly to generated output strings. When tested against order cancellation queries, this caused false-positive refusals on valid support responses explaining "address correction" policies. The issue was resolved by replacing it with a targeted `PII_LEAK` pattern that validates actual customer PII structures (email formats, risk scores, internal warehouse notes) rather than support terminology.
 
 ---
 
-## 📝 Known Limitations & Production Roadmap
+##  Known Limitations & Production Roadmap
 
 1. **In-Memory Trace Logging**: Traces are stored in memory (`agent.traces`). In production, this should be replaced with a durable telemetry pipeline (e.g. OpenTelemetry / ELK).
 2. **Sparse Hashed Vector Proxy**: The sparse term-frequency cosine score is lightweight and dependency-free for this assignment corpus. A large-scale production setup would pair it with dense versioned embeddings.
