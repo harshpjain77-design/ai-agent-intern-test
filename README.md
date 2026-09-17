@@ -8,9 +8,10 @@ Rather than treating a Large Language Model as an unconstrained decision-maker, 
 
 ## 📹 Demo Video Walkthrough
 
-A complete 2–4 minute walkthrough video demonstrating real-time queries, policy citations, order lookups, stale ETA clearing, multi-turn follow-ups, safe handoffs, and automated evaluation execution is embedded directly in the repository:
+A complete 2–4 minute walkthrough video demonstrating real-time queries, policy citations, order lookups, stale ETA clearing, multi-turn follow-ups, safe handoffs, and automated evaluation execution is available below:
 
-🎬 **[Watch / Download Demo Video (`demo.mp4`)](demo.mp4)**
+🎬 **[Watch Demo Video on Google Drive](https://drive.google.com/file/d/1GlR4m1m8QCqkECEb9xNfY1DeHKcWliw3/view?usp=drive_link)**  
+📁 **Repository Video Fallback**: [`demo.mp4`](demo.mp4)
 
 ---
 
